@@ -1,0 +1,229 @@
+/* Components.css */
+
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #2c3e50;
+  position: fixed;
+  width: 60px;
+  left: 0;
+  top: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 1;
+  height:80vh;
+  gap: 20px; /* Adds vertical spacing between items */
+}
+  
+  .Navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px ;
+    font-size: 25px;
+
+  }
+
+  .Navbar button {
+    color: white;
+    background-color: #2c3e50;
+    padding: 14px ;
+    border : none;
+    border-radius: 10px ;
+    font-size: 25px;
+
+  }
+  
+  .Navbar a:hover {
+    color: #ecf0f1;
+    border-radius: 10px;
+    font-size: 40px;
+  }
+  
+  .active {
+    background-color: #1abc9c !important;
+    border-radius: 10px;
+  }
+  
+  .Navbar .link:focus {
+    outline: none;
+    
+  }
+
+.Signin, .Signup, .AddTask, .UpdateTask, .AssignTask{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.Home{
+  display:flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin: 0;
+}
+
+  .AddTask button, .UpdateTask button, .AssignTask button, .Home button{
+  width: 255px;
+  height: 40px;
+  background-color: #0035fa;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin: 10px;
+}
+
+.button-div{
+  display: flex;
+}
+.Sbutton{
+  width: 195px;
+  height: 40px;
+  background-color: #0035fa;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin: 10px;
+}
+
+.home{
+  width: 40px;
+  height: 40px;
+  background-color: #0035fa;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin: 10px;
+}
+
+input{
+  padding:10px;
+  margin: 5px;
+  width :230px;
+}
+select{
+  padding:10px;
+  margin: 5px;
+  width :250px;
+}
+textarea{
+  padding:10px;
+  margin: 5px;
+  width :230px;
+  height : 100px;
+}
+
+.Userdeatalslink{
+  text-decoration: none;
+  color: #006837;
+}
+
+.count{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates two equal-width columns */
+  gap: 20px; /* Space between the boxes */
+  padding: 20px; /* Padding around the grid container */
+}
+.count li{
+    background-color: lightblue;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+
+}
+@media (max-width:600px){
+    .count{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* Creates two equal-width columns */
+      gap: 20px; /* Space between the boxes */
+      padding: 20px; /* Padding around the grid container */
+    }
+}
+
+.mytask-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+      gap: 20px; /* Space between the boxes */
+      padding: 20px; /* Padding around the grid container */
+}
+/* Style for the three dots button */
+.three-dots-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  float: right;
+  padding: 0;
+}
+
+/* Style for the dropdown menu */
+.menu {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  float: right;
+  min-width: 120px;
+  width : 10%;
+  z-index: 10;
+}
+
+.status-menu {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  /* left: 150px; */
+  justify-content: center;
+  min-width: 100px;
+  position: absolute;
+  width : 10%;
+}
+/* Style for each action in the dropdown menu */
+.menu button,
+.menu a {
+  display: flex;
+  padding: 8px 12px;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.menu button:hover,
+.menu a:hover {
+  background-color: #f0f0f0;
+  width: 100%;
+  text-align: center;
+}
+
+.high-priority{
+  background-color: rgba(225, 0, 0, 0.4);
+}
+.medium-priority{
+  background-color: rgba(225, 225, 0, 0.4);
+}
+.low-priority{
+  background-color: rgba(0, 225, 0, 0.4);
+}
+.task-items{
+  padding:20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.tasklist-description{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+p{
+  overflow-wrap: break-word;
+  font-weight: 500;
+  overflow-x: hidden;
+}
